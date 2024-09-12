@@ -1,8 +1,9 @@
 body {
-    background: [green];
-    font-family: 'Times New Roman', Times, serif;
+    background: #f8feff;
+    font-family:"Times New Roman", Times, serif;
+    margin: 40px;
     }
     h1 {
-    color: [black];
     text-align: center;
+    color: #1a5c35;
     }
