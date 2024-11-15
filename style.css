@@ -101,7 +101,7 @@ nav a:hover {
     font-size: 18px;
 }
 
-/* Projects Section */
+/* General Project Styles */
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -116,22 +116,34 @@ nav a:hover {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center the image horizontally */
+    padding: 20px;
 }
 
+/* Image Container with Flexibility for 1:1 Aspect Ratio */
 .project-image {
-    width: 100%;
-    height: 200px;
+    width: 100%; /* Ensure the image container fills the project box */
+    padding-top: 100%; /* Create a square aspect ratio */
+    position: relative;
     overflow: hidden;
 }
 
+/* Image Styling */
 .project-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; 
+    transform: translate(-50%, -50%);
+    border-radius: 5px; 
 }
 
+/* Content Styling */
 .project-content {
-    padding: 20px;
+    padding-top: 10px; /* Space between image and content */
+    text-align: center;
     flex: 1;
 }
 
@@ -143,7 +155,9 @@ nav a:hover {
 .project-content p {
     font-size: 16px;
     line-height: 1.5;
+    color: #E0E0E0;
 }
+
 
 /* Contact Section */
 .contact p {
