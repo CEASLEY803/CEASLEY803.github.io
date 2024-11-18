@@ -1,14 +1,17 @@
 /* General Styles */
 body {
-    background-color: #0A0A0A; /* Dark background */
-    color: #E0E0E0;            /* Light gray text color */
+    background-color: #0A0A0A;
+    /* Dark background */
+    color: #E0E0E0;
+    /* Light gray text color */
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 a {
-    color: #00FF7F; /* Spring Green for links */
+    color: #00FF7F;
+    /* Spring Green for links */
     text-decoration: none;
 }
 
@@ -93,14 +96,14 @@ nav a:hover {
 }
 
 .about-text {
-    display: block; 
+    display: block;
     font-size: 18px;
     line-height: 1.6;
     color: #E0E0E0;
 }
 
 .about-text p {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 
@@ -133,14 +136,17 @@ nav a:hover {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the image horizontally */
+    align-items: center;
+    /* Center the image horizontally */
     padding: 20px;
 }
 
 /* Image Container with Flexibility for 1:1 Aspect Ratio */
 .project-image {
-    width: 100%; /* Ensure the image container fills the project box */
-    padding-top: 100%; /* Create a square aspect ratio */
+    width: 100%;
+    /* Ensure the image container fills the project box */
+    padding-top: 100%;
+    /* Create a square aspect ratio */
     position: relative;
     overflow: hidden;
 }
@@ -152,14 +158,15 @@ nav a:hover {
     left: 50%;
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
     transform: translate(-50%, -50%);
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 /* Content Styling */
 .project-content {
-    padding-top: 10px; /* Space between image and content */
+    padding-top: 10px;
+    /* Space between image and content */
     text-align: center;
     flex: 1;
 }
@@ -217,4 +224,22 @@ footer {
     nav li {
         margin-bottom: 10px;
     }
+}
+
+/* Resume Button Styles */
+.resume-button {
+    display: inline-block;
+    background-color: #32CD32;
+    color: #0A0A0A;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #ADFF2F;
+    color: #0A0A0A;
+    text-decoration: none;
 }
